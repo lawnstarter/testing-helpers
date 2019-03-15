@@ -2,7 +2,7 @@
   "name": "testing-helpers",
   "version": "0.0.1",
   "main": "index.js",
-  "repository": "https://github.com/lawnstarter/testinghelpers",
+  "repository": "https://github.com/lawnstarter/testing-helpers",
   "author": "Michael Lefkowitz <lefkowitz.michael@gmail.com>",
   "license": "MIT"
 }
