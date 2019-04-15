@@ -13,10 +13,11 @@ export function setMockYCoordinates({ inputsState, orderedInputsArray }) {
 }
 
 export function findTestIDInWrapper({ wrapper, testID, findAll = false }) {
+  // TODO: currently does not support RN since we're looking for "test-id" vs "TestID"
   if (findAll) {
-    return wrapper.findAll(`[testID="${testID}"]`);
+    return wrapper.findAll(`[test-id="${testID}"]`);
   }
-  return wrapper.find(`[testID="${testID}"]`);
+  return wrapper.find(`[test-id="${testID}"]`);
 }
 
 export function flushPromises() {
