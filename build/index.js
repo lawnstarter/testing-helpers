@@ -37,7 +37,7 @@ function findTestIDInWrapper(_ref2) {
       _ref2$findAll = _ref2.findAll,
       findAll = _ref2$findAll === void 0 ? false : _ref2$findAll;
 
-  // TODO: currently does not support RN since we're looking for "test-id" vs "TestID"
+  // TODO: currently does not support RN since we're looking for "test-id" vs "testID"
   if (findAll) {
     return wrapper.findAll("[test-id=\"".concat(testID, "\"]"));
   }
