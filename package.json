@@ -1,8 +1,19 @@
 {
   "name": "testing-helpers",
-  "version": "0.0.1",
-  "main": "index.js",
+  "version": "0.0.2",
+  "main": "build/index.js",
   "repository": "https://github.com/lawnstarter/testing-helpers",
   "author": "Michael Lefkowitz <lefkowitz.michael@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "./node_modules/.bin/babel src/index.js --out-dir build"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3"
+  }
 }
