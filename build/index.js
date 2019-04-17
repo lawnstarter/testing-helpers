@@ -36,13 +36,13 @@ function findTestIDInWrapper(_ref2) {
       testID = _ref2.testID,
       _ref2$findAll = _ref2.findAll,
       findAll = _ref2$findAll === void 0 ? false : _ref2$findAll;
+  var attribute = _lodash["default"].get(window, "process.env.VUE_APP_TITLE") ? "test-id" : "testID";
 
-  // TODO: currently does not support RN since we're looking for "test-id" vs "testID"
   if (findAll) {
-    return wrapper.findAll("[test-id=\"".concat(testID, "\"]"));
+    return wrapper.findAll("[".concat(attribute, "=\"").concat(testID, "\"]"));
   }
 
-  return wrapper.find("[test-id=\"".concat(testID, "\"]"));
+  return wrapper.find("[".concat(attribute, "=\"").concat(testID, "\"]"));
 }
 
 function flushPromises() {
