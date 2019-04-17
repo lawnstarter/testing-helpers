@@ -1,6 +1,6 @@
 {
   "name": "testing-helpers",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "build/index.js",
   "repository": "https://github.com/lawnstarter/testing-helpers",
   "author": "Michael Lefkowitz <lefkowitz.michael@gmail.com>",

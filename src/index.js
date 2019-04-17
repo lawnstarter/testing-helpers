@@ -13,11 +13,14 @@ export function setMockYCoordinates({ inputsState, orderedInputsArray }) {
 }
 
 export function findTestIDInWrapper({ wrapper, testID, findAll = false }) {
-  // TODO: currently does not support RN since we're looking for "test-id" vs "testID"
+  const attribute = _.get(window, "process.env.VUE_APP_TITLE")
+    ? "test-id"
+    : "testID";
+
   if (findAll) {
-    return wrapper.findAll(`[test-id="${testID}"]`);
+    return wrapper.findAll(`[${attribute}="${testID}"]`);
   }
-  return wrapper.find(`[test-id="${testID}"]`);
+  return wrapper.find(`[${attribute}="${testID}"]`);
 }
 
 export function flushPromises() {
