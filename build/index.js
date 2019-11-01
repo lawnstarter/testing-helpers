@@ -36,7 +36,7 @@ function findTestIDInWrapper(_ref2) {
       testID = _ref2.testID,
       _ref2$findAll = _ref2.findAll,
       findAll = _ref2$findAll === void 0 ? false : _ref2$findAll;
-  var attribute = _lodash["default"].get(window, "process.env.VUE_APP_TITLE") ? "test-id" : "testID";
+  var attribute = window && _lodash["default"].get(window, "process.env.VUE_APP_TITLE") ? "test-id" : "testID";
 
   if (findAll) {
     return wrapper.findAll("[".concat(attribute, "=\"").concat(testID, "\"]"));

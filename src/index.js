@@ -13,7 +13,7 @@ export function setMockYCoordinates({ inputsState, orderedInputsArray }) {
 }
 
 export function findTestIDInWrapper({ wrapper, testID, findAll = false }) {
-  const attribute = _.get(window, "process.env.VUE_APP_TITLE")
+  const attribute = window && _.get(window, "process.env.VUE_APP_TITLE")
     ? "test-id"
     : "testID";
 
