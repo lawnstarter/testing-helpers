@@ -36,11 +36,13 @@ function findTestIDInWrapper(_ref2) {
       testID = _ref2.testID,
       _ref2$findAll = _ref2.findAll,
       findAll = _ref2$findAll === void 0 ? false : _ref2$findAll;
-  var attribute = window && _lodash["default"].get(window, "process.env.VUE_APP_TITLE") ? "test-id" : "testID";
+  // eslint-disable-next-line no-undef
+  var attribute = window && _lodash["default"].get(window, 'process.env.VUE_APP_TITLE') ? 'test-id' : 'testID';
 
   if (findAll) {
     return wrapper.findAll("[".concat(attribute, "=\"").concat(testID, "\"]"));
-  }
+  } // eslint-disable-next-line lodash/prefer-lodash-method
+
 
   return wrapper.find("[".concat(attribute, "=\"").concat(testID, "\"]"));
 }
