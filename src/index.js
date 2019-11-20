@@ -13,11 +13,13 @@ export function setMockYCoordinates({ inputsState, orderedInputsArray }) {
 }
 
 export function findTestIDInWrapper({ wrapper, testID, findAll = false }) {
+    // eslint-disable-next-line no-undef
     const attribute = window && _.get(window, 'process.env.VUE_APP_TITLE') ? 'test-id' : 'testID';
 
     if (findAll) {
         return wrapper.findAll(`[${attribute}="${testID}"]`);
     }
+    // eslint-disable-next-line lodash/prefer-lodash-method
     return wrapper.find(`[${attribute}="${testID}"]`);
 }
 
