@@ -32,7 +32,7 @@
         "@semantic-release/release-notes-generator": "7.1.4",
         "commitizen": "3.0.7",
         "cz-ls-commits": "https://github.com/lawnstarter/cz-ls-commits#0.3.1",
-        "eslint-config-ls-react": "https://github.com/lawnstarter/eslint-config-ls-react#3.0.0",
+        "eslint-config-ls-react": "https://github.com/lawnstarter/eslint-config-ls-react#3.1.0",
         "husky": "3.0.1",
         "license-checker": "25.0.1",
         "pretty-quick": "1.11.1",
