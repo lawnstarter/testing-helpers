@@ -2797,9 +2797,9 @@ eslint-config-airbnb@^18.0.1:
     object.assign "^4.1.0"
     object.entries "^1.1.0"
 
-"eslint-config-ls-react@https://github.com/lawnstarter/eslint-config-ls-react#3.1.0":
-  version "3.1.0"
-  resolved "https://github.com/lawnstarter/eslint-config-ls-react#6fdd8b0f6318c0d79d860c5020b3e91f91d6dcfd"
+"eslint-config-ls-react@https://github.com/lawnstarter/eslint-config-ls-react#269bc3b":
+  version "3.1.1"
+  resolved "https://github.com/lawnstarter/eslint-config-ls-react#269bc3b2eb23fd6c0582ad63b8349a901abf4693"
   dependencies:
     babel-eslint "^10.0.3"
     eslint "^6.6.0"
