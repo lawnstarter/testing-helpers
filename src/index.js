@@ -12,9 +12,9 @@ export function setMockYCoordinates({ inputsState, orderedInputsArray }) {
     return updatedInputsState;
 }
 
-export function findTestIDInWrapper({ wrapper, testID, findAll = false }) {
-    // eslint-disable-next-line no-undef
-    const attribute = window && _.get(window, 'process.env.VUE_APP_TITLE') ? 'test-id' : 'testID';
+export function findTestIDInWrapper({ wrapper, testID, findAll = false, attribute = null }) {
+    // eslint-disable-next-line no-undef, no-param-reassign
+    attribute = attribute || _.get(window, 'process.env.VUE_APP_TITLE') ? 'test-id' : 'testID';
 
     if (findAll) {
         return wrapper.findAll(`[${attribute}="${testID}"]`);
