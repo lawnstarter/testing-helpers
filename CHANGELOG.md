@@ -1,3 +1,15 @@
+# [0.2.0](https://github.com/lawnstarter/testing-helpers/compare/0.1.0...0.2.0) (2020-11-17)
+
+
+### Bug Fixes
+
+* **fix-window:** window ([9506c97](https://github.com/lawnstarter/testing-helpers/commit/9506c97c4111a28feeb8813bc206182462791f0c))
+
+
+### Features
+
+* **fix-window:** methods ([5256ac1](https://github.com/lawnstarter/testing-helpers/commit/5256ac10d9c2d67255ddd4c04738fb2de9d1806c))
+
 # [0.1.0](https://github.com/lawnstarter/testing-helpers/compare/0.0.4...0.1.0) (2019-11-20)
 
 
