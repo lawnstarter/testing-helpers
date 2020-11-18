@@ -36,7 +36,7 @@
         "husky": "^3.1.0",
         "license-checker": "25.0.1",
         "pretty-quick": "1.11.1",
-        "semantic-release": "15.13.18"
+        "semantic-release": "17.2.3"
     },
     "husky": {
         "hooks": {
