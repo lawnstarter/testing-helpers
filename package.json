@@ -6,15 +6,15 @@
     "author": "Michael Lefkowitz <lefkowitz.michael@gmail.com>",
     "license": "MIT",
     "scripts": {
-        "build": "./node_modules/.bin/babel src/index.js --out-dir build",
+        "build": "babel src/index.js --out-dir build",
         "cm": "git-cz",
         "cm:retry": "git-cz --retry",
         "prettier:debug-check": "prettier --config ./.prettierrc.js --debug-check \"{src,test}/**/*.js\"",
-        "preprettier:all": "yarn run prettier:debug-check",
+        "preprettier:all": "yarn prettier:debug-check",
         "prettier:all": "prettier --config ./.prettierrc.js --write \"{src,test}/**/*.js\"",
         "generate:licenses": "license-checker --csv --customPath ./licenses/customFormat.json --out ./licenses/licenses.csv",
-        "lint": "echo \"---Running ESLint---\" && eslint \"src/**/*.{js,jsx}\"",
-        "lint:all": "yarn run eslint --ext .js ."
+        "lint": "eslint \"src/**/*.{js,jsx}\"",
+        "lint:all": "eslint --ext .js ."
     },
     "dependencies": {
         "lodash": "^4.17.21"
@@ -36,13 +36,13 @@
         "husky": "^3.1.0",
         "license-checker": "25.0.1",
         "pretty-quick": "1.11.1",
-        "semantic-release": "15.13.18"
+        "semantic-release": "19.0.3"
     },
     "husky": {
         "hooks": {
             "pre-commit": "pretty-quick --staged",
             "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-            "pre-push": "echo \"---Running ESLint---\" && yarn lint"
+            "pre-push": "yarn lint"
         }
     },
     "release": {
