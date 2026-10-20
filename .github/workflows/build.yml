@@ -23,7 +23,7 @@ jobs:
                   cache: yarn
 
             - name: Configure Git
-              run: git config --global --add url."https://${{ secrets.GH_TOKEN }}@github.com/".insteadOf "https://github.com/"
+              run: git config --global --add url."https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/".insteadOf "https://github.com/"
 
             - name: Configure npmrc
               run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_TOKEN }}" >> .npmrc
